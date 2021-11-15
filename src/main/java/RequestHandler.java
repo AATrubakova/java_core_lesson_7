@@ -69,7 +69,7 @@ public class RequestHandler {
                 String maxTemp = objectMapper.readTree(dayForecast).at("/Temperature").at("/Maximum").at("/Value").asText();
                 String minTemp = objectMapper.readTree(dayForecast).at("/Temperature").at("/Minimum").at("/Value").asText();
                 String date = objectMapper.readTree(dayForecast).at("/Date").asText();
-                System.out.println( " на  дату " + date + " ожидается днем " + weatherAtDay + ", ночью " +weatherAtNight + " , максимальная температура "+ maxTemp + ", минимальная температура " + minTemp);
+                System.out.println( " на  дату " + date + " ожидается днем " + weatherAtDay + ", ночью " +weatherAtNight + ", максимальная температура "+ maxTemp + ", минимальная температура " + minTemp);
             }
 
         return json;
