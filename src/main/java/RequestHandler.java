@@ -71,7 +71,6 @@ public class RequestHandler {
                 String date = objectMapper.readTree(dayForecast).at("/Date").asText();
                 System.out.println( " на  дату " + date + " ожидается днем " + weatherAtDay + ", ночью " +weatherAtNight + " , максимальная температура "+ maxTemp + ", минимальная температура " + minTemp);
             }
-
         return json;
     }
 }
